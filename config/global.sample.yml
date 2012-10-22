@@ -1,0 +1,6 @@
+database:
+  host: my-host
+  port: 3306
+  database: my-database
+  user: my-user
+  password: my-password

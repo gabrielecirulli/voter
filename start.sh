@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
 
 # Run the app
-coffee server.coffee
+cd app
+node server.js "$@"
