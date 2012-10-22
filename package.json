@@ -1,13 +1,17 @@
 {
-	"name": "voter",
-	"description": "An application that lets teachers interact with their students",
-	"version": "0.0.1",
-	"private": true,
-	"dependencies": {
-		"express": "3.x",
-		"socket.io": "0.9.10",
-		"coffee-script": "1.3.3",
-		"js-yaml": "1.0.2",
-		"mysql": "2.0.0-alpha3"
-	}
+    "name": "voter",
+    "description": "An application that lets teachers interact with their students",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "express": "3.x",
+        "socket.io": "0.9.10",
+        "js-yaml": "1.0.2",
+        "mysql": "2.0.0-alpha3",
+        "eco": "1.1.0-rc-3"
+    },
+    "devDependencies": {
+        "coffee-script": "1.3.3",
+        "file": "0.2.1"
+    }
 }

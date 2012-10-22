@@ -1,3 +1,4 @@
+port: 80
 database:
   host: my-host
   port: 3306

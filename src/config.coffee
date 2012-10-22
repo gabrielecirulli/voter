@@ -1,5 +1,5 @@
-path 	= require 'path'
-fs 		= require 'fs'
+path    = require 'path'
+fs      = require 'fs'
 
 require 'js-yaml'
 
@@ -8,9 +8,9 @@ configFiles = fs.readdirSync configPath
 
 # Load all config files
 for configFile in configFiles
-	continue if path.extname( configFile ) isnt '.yml' or configFile.indexOf( '.sample' ) isnt -1
+    continue if path.extname( configFile ) isnt '.yml' or configFile.indexOf( '.sample' ) isnt -1
 
-	configName = path.basename configFile, '.yml'
-	fullPath = path.join configPath, configFile
+    configName = path.basename configFile, '.yml'
+    fullPath = path.join configPath, configFile
 
-	exports[configName] = require fullPath
+    exports[configName] = require fullPath

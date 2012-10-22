@@ -1,12 +1,20 @@
 # Application starting point
-config 		= require './config'
+config      = require './config'
 
-express 	= require 'express'
-app 		= do express
+# Modules
+express     = require 'express'
+http        = require 'http'
+socket      = require 'socket.io'
+eco         = require 'eco'
 
-console.log config
+# App objects
+app         = do express
+server      = http.createServer app
+io          = socket.listen server
+
+server.listen config.global.port
+console.log "Voter is running on port #{server.address().port}!"
 
 app.get '/', (req, res) ->
-	res.send 'hello world!'
+    res.send 'hello world!'
 
-app.listen 3000
