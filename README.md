@@ -5,7 +5,7 @@ Voter is an application that lets teachers interact with their students. Student
 ### Installation
 To get Voter to work on your server, you will need to clone this repository locally and then install the dependencies:
 ```
-npm install
+$ npm install
 ```
 
 After a successful installation, make a copy of the file `config/global.sample.yml`, rename it to `global.yml` and fill out the configuration variables.
@@ -13,20 +13,20 @@ After a successful installation, make a copy of the file `config/global.sample.y
 ### Running
 To run the application, execute the following command after having installed the dependencies correctly:
 ```
-./start.sh
+$ ./start.sh
 ```
 
 ## Development
 ### Running the coffeescript code
 If you decide to make changes to the CoffeeScript source, you may run it with the following command:
 ```
-./development.sh
+$ ./development.sh
 ```
 
 ### Compiling changes
 If you wish to compile the changes you've made to the CoffeeScript source into JavaScript, use cake:
 ```
-cake build
+$ cake build
 ```
 
 It's suggested to always build the changes to JavaScript code before committing them.
