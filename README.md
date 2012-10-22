@@ -10,7 +10,7 @@ npm install
 
 After a successful installation, make a copy of the file `config/global.sample.yml`, rename it to `global.yml` and fill out the configuration variables.
 
-## Running
+### Running
 To run the application, execute the following command after having installed the dependencies correctly:
 ```
 ./start.sh
